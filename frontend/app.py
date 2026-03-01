@@ -343,8 +343,8 @@ elif app_mode == "Smart Farm Analysis":
         area = st.number_input("Area (ha)", 0.1, 1000.0, 5.0)
         fertilizer = st.number_input("Fertilizer (kg)", 0, 5000, 500)
         pesticide = st.number_input("Pesticide (kg)", 0, 1000, 200)
-        region = st.selectbox("Region", ["North", "South", "East", "West"])
-        weather_condition = st.selectbox("Weather Condition", ["Sunny", "Rainy", "Cloudy"])
+        region = st.selectbox("Region", ["DESERT", "HUMID", "SEMI ARID", "SEMI HUMID"])
+        weather_condition = st.selectbox("Weather Condition", ["SUNNY", "RAINY", "NORMAL", "WINDY"])
 
     if st.button("Run Smart Analysis"):
 
